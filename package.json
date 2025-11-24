@@ -7,7 +7,8 @@
 		"rlcp": "src/index.ts"
 	},
 	"scripts": {
-		"start": "bun src/index.ts"
+		"start": "bun src/index.ts",
+		"build": "bun build src/index.ts --target=bun --outfile=dist/index.js"
 	},
 	"dependencies": {
 		"fast-glob": "^3.3.2",
