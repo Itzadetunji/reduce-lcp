@@ -1,6 +1,6 @@
 {
 	"name": "rlcp",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "Image converter CLI",
 	"main": "src/index.ts",
 	"bin": {
