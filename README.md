@@ -1,10 +1,10 @@
-# Convi
+# Reduce Largest Contentful Paint (RLCP)
 
 A powerful CLI tool to optimize images in your project, convert them to modern formats (like WebP), and automatically update file references in your code.
 
 ## Usage
 
-1.  **Configuration**: Create a `convi.config.json` file in your project root.
+1.  **Configuration**: Create a `rlcp.config.json` file in your project root.
 
     ```json
     {
@@ -20,12 +20,12 @@ A powerful CLI tool to optimize images in your project, convert them to modern f
 2.  **Run**: Execute the tool in your project directory.
 
     ```bash
-    bunx convi
+    bunx rlcp
     # or if installed locally
     bun start
     ```
 
-## Configuration (`convi.config.json`)
+## Configuration (`rlcp.config.json`)
 
 | Key                 | Type     | Description                                                                 | Required |
 | ------------------- | -------- | --------------------------------------------------------------------------- | :------: |
@@ -50,11 +50,11 @@ Original images are **not deleted**. They are moved to the specified `output` di
 
 ### 🔄 Automatic Reference Updates
 
-If `working_directory` is specified, Convi scans your code files (HTML, JS, JSX, TS, TSX, CSS, JSON, MD) and automatically updates references to point to the new file extensions (e.g., changing `img.png` to `img.webp` in your `index.html`).
+If `working_directory` is specified, Reduce Largest Contentful Paint (RLCP) scans your code files (HTML, JS, JSX, TS, TSX, CSS, JSON, MD) and automatically updates references to point to the new file extensions (e.g., changing `img.png` to `img.webp` in your `index.html`).
 
 ### 🔒 Smart Locking
 
-Convi creates a `convi.lock` file to track converted images.
+Reduce Largest Contentful Paint (RLCP) creates a `rlcp.lock` file to track converted images.
 
 - Prevents re-converting images that have already been processed.
 - Ensures reference updates still work even if the original file has been moved to the backup folder.

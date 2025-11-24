@@ -1,10 +1,10 @@
 {
-	"name": "convi",
+	"name": "rlcp",
 	"version": "1.0.0",
 	"description": "Image converter CLI",
 	"main": "src/index.ts",
 	"bin": {
-		"convi": "src/index.ts"
+		"rlcp": "src/index.ts"
 	},
 	"scripts": {
 		"start": "bun src/index.ts"

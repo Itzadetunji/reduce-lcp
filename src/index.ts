@@ -15,8 +15,8 @@ interface Config {
 	working_directory?: string;
 }
 
-const CONFIG_FILE_NAME = "convi.config.json";
-const LOCK_FILE_NAME = "convi.lock";
+const CONFIG_FILE_NAME = "rlcp.config.json";
+const LOCK_FILE_NAME = "rlcp.lock";
 
 interface LockData {
 	conversions: Record<string, string>;
@@ -187,7 +187,9 @@ async function updateReferences(
 }
 
 async function main() {
-	console.log(pc.cyan("Welcome to Convi! 🖼️\n"));
+	console.log(
+		pc.cyan("Welcome to Reduce Largest Contentful Paint (RLCP)! 🖼️\n"),
+	);
 
 	const config = await loadConfig();
 	const lockData = await loadLockFile();
