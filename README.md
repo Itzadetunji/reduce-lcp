@@ -2,6 +2,9 @@
 
 A powerful CLI tool to optimize images in your project, convert them to modern formats (like WebP), and automatically update file references in your code.
 
+## Demo Video - [Here](https://github.com/user-attachments/assets/fe73e189-dd41-4628-a0aa-00546b3bbd48)
+
+
 ## Usage
 
 1.  **Configuration**: Create a `rlcp.config.json` file in your project root.
